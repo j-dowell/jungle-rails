@@ -20,12 +20,10 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     
     visit root_path
     find(".btn-default", match: :first).click
-    sleep(5)
-
-    save_screenshot
 
     expect(page).to have_css '.product-detail'
-
+    save_screenshot
+    
   end
 
 end
